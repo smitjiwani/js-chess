@@ -1,0 +1,88 @@
+/* define colours */
+:root {
+  --light: 	#baca44;
+  --dark: #769656;
+  --light-pieces : #ffffff;
+  --dark-pieces : #000000;
+  --selected: #ffff00;
+  --attack: #ff0000;
+  --target: #00ff00;
+}
+
+
+.chessboard {
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square{
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.light{
+  background-color: var(--light);
+}
+
+.dark{
+  background-color: var(--dark);
+}
+
+.bpieces {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+
+}
+
+.wpieces {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.wpieces svg{
+  fill: var(--light-pieces);
+}
+
+.bpieces svg{
+  fill: var(--dark-pieces);
+}
+
+.selected {
+  background-color: var(--selected);
+}
+
+.attack{
+  background-color: var(--attack);
+}
+
+.target {
+  background-color: var(--target);
+}
+
+.unselected {
+  background-color: transparent;
+}
+
+
+
